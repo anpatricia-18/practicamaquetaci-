@@ -1,0 +1,119 @@
+/* Estils bàsics */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el text */
+  }
+  
+  .container {
+    display: grid;
+    width: 800px; /* Amplada total */
+    grid-template-columns: 50% 25% 25%; /* Primera columna ocupa un 50%, les altres dues el 25% */
+    grid-template-rows: 100px auto 50px auto; /* Primera fila 100px, tercera fila 50px */
+    gap: 1px; /* Mida del marge entre caixes */
+    border: 2px solid rgb(205, 49, 140); /* Border fucsia al contenidor principal */
+    margin: 0 auto; /* Centra el contenidor */
+  }
+  
+  /* Cada div dins el contenidor */
+  .box {
+    border: 2px solid rgb(148, 15, 214); /* Borders lilas per a cada caixa */
+    display: flex; /* Utilitza Flexbox per alinear i distribuir el contingut dins de la caixa */
+    justify-content: center; /* Centra el contingut horitzontalment dins de la caixa */
+    align-items: center; /* Centra el contingut verticalment dins de la caixa */
+    font-size: 20px; /* Estableix la mida de la font a 20 píxels */
+    color: rgb(16, 15, 15); /* Fa que el text dins de la caixa sigui de color negre */
+  }
+  
+    
+  }
+  /* Fons de colors per a cada caixa */
+  .one {
+    grid-column: 1 / span 3; /* Ocupa tot l'ample */
+    background-color: cyan;
+  }
+  
+  .two {
+    background-color: rgb(208, 255, 0);
+  }
+  
+  .three {
+    background-color: rgb(209, 150, 24);
+  }
+  
+  .four {
+    grid-column: 1 / span 2; /* Ocupa dues columnes */
+    background-color: violet;
+  }
+  
+  .five {
+    background-color: rgb(165, 232, 78);
+  }
+  
+  .six {
+    background-color: rgb(139, 0, 0);
+  }
+  
+  .seven {
+    grid-column: 1 / span 2; /* Ocupa dues columnes */
+    background-color: lime;
+  }
+  
+  .eight {
+    background-color: rgb(219, 17, 50);
+  }
+  
+  /* Efector Hover - Una sola regla per a tots els divs */
+  .container div:hover {
+    opacity: 0.7;
+    border: 3px solid rgb(24, 223, 91); /* Canvia el border quan el ratolí passa per sobre */
+  }
+  
+  /* Imatges de fons */
+  .one {
+      background-image: url('https://images.unsplash.com/photo-1533450718592-29d45635f0a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anBnfGVufDB8fDB8fHww');
+      background-size: cover; /* Fa que la imatge cobreixi totalment el div, ajustant-ne si cal la mida */
+      background-repeat: no-repeat; /* La imatge no es repetirà*/
+    }
+    
+    .two {
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fes-es%2Fbuscar%2Fpaisajes%2F&psig=AOvVaw18Z9fS4W22X3IkEM3BJE81&ust=1729537691688000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMibwo_UnYkDFQAAAAAdAAAAABAE');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .three {
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/258/072/small/landscape-at-mt-fuji-in-japan-free-photo.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .four {
+      background-image: url('https://plus.unsplash.com/premium_photo-1672498193366-7b9ba9fe26cb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29taWRhJTIwZ3Jhc29zYXxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .five {
+      background-image: url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?cs=srgb&dl=pexels-kellie-churchman-371878-1001682.jpg&fm=jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .six {
+      background-image: url('https://plus.unsplash.com/premium_photo-1676494046521-1a0b9270a437?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBsYXlhc3xlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+   
+  .seven {
+      background-image: url('https://images.freeimages.com/images/large-previews/2f9/vacas-1375179.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .eight {
+      background-image: url('https://t4.ftcdn.net/jpg/02/45/86/69/360_F_245866938_IEAviykbvZoPBDw7byrRh6YGoCkKfCan.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
